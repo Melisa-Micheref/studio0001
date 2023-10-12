@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #fcca46;
+    width: 100%;
+    height: 140px;
+}
+.logo{
+    width: 150px;
+    height:135px;
+    float:left;
+    padding: 3px;
+}
+.superior{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+ul li{
+    display: inline-block;
+    padding: 5px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+li a:hover{
+    font-weight: 700;
+    padding:20px;
+    background-color: #233D4D;
+    color: #fcca46;
+    border-radius: 20px;
+    text-decoration:underline;
+}
+.titulo-pag{
+    padding-top: 10px;
+    font-family: 'Teko', sans-serif;
+    font-size:50px;
+    text-align: center;
+    color:rgb(254, 127, 45);
+    }
+
+.grid-container{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+    justify-content: center;
+    padding:5px;
+    text-align: center;
+    grid-template-areas: 
+    "art-le" "art-be"
+    "art-ma" "art-dn3";
+}
+
+.imgcard{
+    text-align: center;
+    width:350px;
+    height:250px;
+    object-fit: contain;
+}
+.logo-in{
+    width:450px;
+    height: 300px;
+    object-fit: contain;
+}
+.logos {
+    width: 350px;
+    height: 250px;
+    object-fit: contain;
+}
+div article{
+    display: flex;
+    flex-direction: column;
+    justify-content: row;
+    text-align: start;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+/*TEXTO INDEX-SOBRE NOSOTROS*/
+
+article{
+    margin-top: 5%;
+}
+article p{
+    font-family:'Croissant One', cursiva;
+    font-style: italic;
+    font-size:20px;
+    color:#233D4D;
+    margin: 5%;
+}
+
+.nosotros{
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-family: 'Croissant One', cursiva;
+    font-size:18px;
+    color:#233D4D;  
+}
+/*CONTACTO*/
+.contacto{
+    margin: 25px;
+    font-size: medium;
+}
+.tit-cont{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #202C59;
+}
+.form{
+    font-size: small;
+}
+input:focus{
+    outline: solid 2px #fcca46;
+}
+input:checked{
+    color: #233D4D;
+}
+.btn{
+    background-color:#202C59;
+    color:white;
+    margin-top:10px;
+}
+a{
+    text-decoration: none;
+    color: #233D4D;
+}
+
+/*HOMBRE Y MUJER*/
+
+h5{
+    padding-left: 20%;
+    font-size:medium;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+
+.productos{
+    width: 300px;
+    height: 300px;
+    border: solid 2px;
+    border-radius: 4px;
+}
+
+
+.titulos {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.precio {
+    text-align: center;
+    font-size: medium;
+    padding-bottom: 15px;
+}
+
+
+/*TRABAJA CON NOSOTROS*/
+.empleo{
+    margin:0 55% 10% 10%;
+}
+.formulario{
+    width: 100vw;
+    height: 500px;
+}
+.formulario input{
+    margin-left: 20px;
+}
+.datos{
+    padding: 12px;
+    color:#233D4D;
+}
+.borde-form{
+    width: auto;
+    border: solid 2px #202C59;
+    height:580px;
+    padding: 8px;
+}
+.form-text{
+    padding-left: 25px;
+    text-decoration: underline;
+}
+input:checked + label{
+    color:#619B8A;
+}
+input[type="radio"]:checked{
+    box-shadow: 0 0 0 1px #233D4D;
+    background-color: #fcca46;
+}
+input[type="checkbox"]:checked{
+    box-shadow: 0 0 0 1px #233D4D;
+    background-color: #fcca46;
+}
+/*FOOTER*/
+footer{
+    background-color: #fcca46;
+    text-align: center;
+}
+.footer{  
+    display: flex;
+    display: inline-block;
+    align-items: center;
+    padding: 5px 0;
+    height: 70px;
+}
+footer ul li{
+    padding-top: 8px;
+    font-weight: 600;
+}
+
+footer img{
+    height: 40px;
+    width:40px;
+}
+footer p{
+    padding-top: 5px;
+    background-color: white;
+}
+/*tamaño celular vert.*/
+@media (max-width: 576px){
+    .grid-container{
+    grid-template-columns: 1fr;
+    margin-right: 15px;
+}
+    .superior{
+        display: inline-block;
+    }
+    ul li{
+        padding-top:20px;
+    }
+    .titulo-pag{
+        display:inline-block;
+        justify-content: center;
+        text-align: center;
+        margin-left: 30px;
+    }
+    main img{
+        width: 200px;
+        height: 200px;
+    }
+    .celu{
+        align-items: center;
+    }
+
+    footer ul li img{
+        height: 30px;
+        width:30px;
+    }
+
+    .categorias {
+        flex-direction: column! important;
+    }
+    .mapa{
+        height: 300px;
+        width:400px;
+    }
+    li a:hover{
+        padding: 0;
+    }
+    .borde-form{
+        width: 480px;
+        margin-left: -25px;
+    }
+
+    .formulario input{
+        margin-left: 7px;
+    }
+}
